@@ -9,14 +9,17 @@ The executable is named `searxng`. It runs without Python, Node.js, or a backgro
 Requires Go 1.27 or newer to build. The resulting binary needs no Go toolchain at runtime.
 
 ```sh
-git clone https://gitea.godemperordoge.org/ziadarafat/searxng-cli.git
+git clone https://github.com/RustyRaptor/searxng-cli.git
 cd searxng-cli
 go test ./...
 CGO_ENABLED=0 go build -trimpath -o bin/searxng .
 install -m 755 bin/searxng "$HOME/.local/bin/searxng"
 ```
 
-This repository is private; cloning requires access to the personal Gitea instance. Keep credentials in your Git credential helper, never in the clone URL.
+GitHub is the canonical repository: https://github.com/RustyRaptor/searxng-cli .
+The public [Gitea mirror](https://gitea.godemperordoge.org/ziadarafat/searxng-cli) pulls changes from GitHub; submit issues and pull requests on GitHub.
+
+Keep credentials in your Git credential helper, never in a clone URL.
 
 Alternatively, build in a rootless Podman container:
 

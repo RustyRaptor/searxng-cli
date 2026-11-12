@@ -1,4 +1,4 @@
-module gitea.godemperordoge.org/ziadarafat/searxng-cli
+module github.com/RustyRaptor/searxng-cli
 
 go 1.27.0
 
